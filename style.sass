@@ -1,0 +1,75 @@
+$font-nav-link: #292929
+$color-white: #ffffff
+$color-green: #01996D
+
+
+
+
+
+
+html
+    box-sizing: border-box
+
+*,
+*::after,
+*::before
+    box-sizing: inherit
+
+body
+    margin: 0
+    padding: 0
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+    margin: 0
+
+
+ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+a
+    text-decoration: none
+
+.container
+    width: 1507px
+    margin: 0 auto
+
+.page-nav
+    display: flex
+    padding: 17px 0
+
+    &__logo
+        margin-right: 173px
+
+.nav-list
+    display: flex
+    justify-content: space-between
+    width: 557px
+    margin-right: 283px
+
+    &__link
+        font-size: 20px
+        line-height: 24px
+        color: $font-nav-link
+
+
+.nav-wrap
+    display: flex
+    justify-content: space-between
+    width: 277px
+
+    &__link
+      font-size: 20px
+      line-height: 24px
+
+      &--start
+        width: 183px
+        color: $font-white
+        background-color: $color-green
