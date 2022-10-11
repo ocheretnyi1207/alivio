@@ -1,19 +1,21 @@
+$font-base: "Lato", "Verdana", sans-serif
 $font-nav-link: #292929
 $color-white: #ffffff
 $color-green: #01996D
-
+$color-black: #000000
 
 html
-    box-sizing: border-box
+  box-sizing: border-box
 
 *,
 *::after,
 *::before
-    box-sizing: inherit
+  box-sizing: inherit
 
 body
-    margin: 0
-    padding: 0
+  margin: 0
+  padding: 0
+  font-family: $font-base
 
 h1,
 h2,
@@ -22,50 +24,68 @@ h4,
 h5,
 h6,
 p
-    margin: 0
+  margin: 0
 
 
 ul
-    margin: 0
-    padding: 0
-    list-style: none
+  margin: 0
+  padding: 0
+  list-style: none
 
 a
-    text-decoration: none
+  text-decoration: none
+  color: $color-black
 
 .container
-    width: 1507px
-    margin: 0 auto
+  width: 1507px
 
-.page-nav
+.link
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $color-green
+  font-size: 20px
+  line-height: 24px
+  color: $color-white
+  border-radius: 4px
+
+  &--menu
+    width: 183px
+    min-height: 51px
+
+.menu
+  padding: 17px 0
+
+  &__container
     display: flex
-    padding: 17px 0
+    margin: 0 auto
+    padding-left: 63px
 
-    &__logo
-        margin-right: 173px
+  &__logo
+    margin-top: 13px
+    margin-right: 172px
+
+  &__nav
+    padding-top: 13px
+    margin-right: 283px
+
+.menu-wrap
+  width: 277px
+  display: flex
+  justify-content: space-between
+
+  &__link
+    width: 59px
+    padding-top: 13px
+    font-size: 20px
+    line-height: 24px
 
 .nav-list
     display: flex
     justify-content: space-between
     width: 557px
-    margin-right: 283px
 
     &__link
         font-size: 20px
         line-height: 24px
         color: $font-nav-link
-
-
-.nav-wrap
-    display: flex
-    justify-content: space-between
-    width: 277px
-
-    &__link
-      font-size: 20px
-      line-height: 24px
-
-      &--start
-        width: 183px
-        color: $font-white
-        background-color: $color-green
