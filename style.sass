@@ -1,8 +1,12 @@
+@import ./fonts
+
 $font-base: "Lato", "Verdana", sans-serif
+$font-second: "Georgia", "Times New Roman", serif
 $color-nav-link: #292929
 $color-white: #ffffff
 $color-green: #01996D
 $color-black: #000000
+$color-grey:#D6D6D6
 
 html
   box-sizing: border-box
@@ -53,8 +57,39 @@ a
     width: 183px
     min-height: 51px
 
+  &--header
+    width: 227px
+    min-height: 65px
+
+
+.page-header
+  padding-bottom: 350px
+  background: url("/img/page-header-mask.png") no-repeat, url("/img/page-header-bg.jpg") no-repeat
+
+  &__container
+    margin: 0 auto
+    padding-top: 175px
+    padding-left: 63px
+
+  &__title
+    width: 440px
+    font-family: $font-second
+    font-weight: 700
+    font-size: 65px
+    line-height: 74px
+    color: $color-green
+    margin-bottom: 30px
+
+  &__text
+    width: 470px
+    margin-bottom: 30px
+    font-size: 20px
+    line-height: 32px
+
 .menu
   padding: 17px 0
+  background-color: $color-white
+  border-bottom: 1px solid #000
 
   &__container
     display: flex
@@ -75,7 +110,7 @@ a
   justify-content: space-between
 
   &__link
-    width: 59px
+    width: 72px
     padding-top: 13px
     font-size: 20px
     line-height: 24px
@@ -89,3 +124,4 @@ a
     font-size: 20px
     line-height: 24px
     color: $color-nav-link
+
