@@ -5,6 +5,7 @@ $font-second: "Georgia", "Times New Roman", serif
 $color-nav-link: #292929
 $color-white: #ffffff
 $color-green: #01996D
+$color-dark-green: #245852
 $color-black: #000000
 $color-grey:#D6D6D6
 $color-text: #424242
@@ -133,6 +134,7 @@ a
 
 .works
   padding-top: 169px
+  padding-bottom: 46px
 
   &__container
     margin: 0 auto
@@ -160,6 +162,7 @@ a
 
   &__text
     width: 650px
+    padding-top: 19px
     margin-right: auto
     font-weight: 500
     font-size: 20px
@@ -168,31 +171,68 @@ a
     letter-spacing: -1px
 
 .works-features
+  width: 1360px
   display: flex
   justify-content: space-between
 
   &__item
+    position: relative
     width: 390px
 
     &:first-child
+      h3
+        margin-left: 88px
+
       p
         margin-bottom: 60px
+
+      &::after
+        content: ""
+        background: url("/img/01-img.svg") no-repeat
+        position: absolute
+        left: 7px
+        top: -53px
+        width: 157px
+        height: 225px
 
 
     &:nth-child(3n+2)
       padding-top: 287px
 
+      h3
+        margin-left: 80px
+        margin-right: -4px
+
       p
         margin-bottom: 37px
+
+      &::after
+        content: ""
+        background: url("/img/02-img.svg") no-repeat
+        position: absolute
+        left: 7px
+        top: 234px
+        width: 157px
+        height: 225px
 
     &:last-child
       padding-top: 54px
 
       h3
+        margin-left: 134px
         margin-bottom: 46px
 
       p
         margin-bottom: 48px
+
+      &::after
+        content: ""
+        background: url("/img/03-img.svg") no-repeat
+        position: absolute
+        left: 16px
+        top: 1px
+        width: 157px
+        height: 225px
 
   &__title
     font-family: $font-second
@@ -204,3 +244,9 @@ a
     font-weight: 500
     font-size: 18px
     line-height: 30px
+
+  &__img
+    border-radius: 12px
+
+.story
+  background-color: $color-dark-green
