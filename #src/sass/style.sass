@@ -44,6 +44,7 @@ a
 
 .container
   width: 1507px
+  margin: 0 auto
 
 .link
   display: flex
@@ -79,7 +80,6 @@ a
   background-position-y: bottom
 
   &__container
-    margin: 0 auto
     padding-top: 175px
     padding-left: 63px
 
@@ -107,7 +107,6 @@ a
 
   &__container
     display: flex
-    margin: 0 auto
     padding-left: 63px
 
   &__logo
@@ -134,17 +133,31 @@ a
   justify-content: space-between
   width: 557px
 
+  &--footer
+    display: block
+
+  &__item
+    &--footer
+      margin-bottom: 62px
+
+      &:last-child
+        margin-bottom: 0
+
   &__link
     font-size: 18px
     line-height: 27px
     color: $color-nav-link
+
+    &--footer
+      font-size: 25px
+      color: $color-white
+      letter-spacing: -1px
 
 .works
   padding-top: 169px
   padding-bottom: 46px
 
   &__container
-    margin: 0 auto
     padding-left: 63px
 
   &__text
@@ -262,7 +275,6 @@ a
 
   &__container
     width: 1518px
-    margin: 0 auto
 
   &__wrap
     display: flex
@@ -305,9 +317,7 @@ a
 
 .product
   padding-top: 120px
-
-  &__container
-    margin: 0 auto
+  padding-bottom: 242px
 
   &__wrap
     display: flex
@@ -338,3 +348,14 @@ a
     font-size: 18px
     line-height: 31px
     letter-spacing: -0.4px
+
+.page-footer
+  padding-top: 95px
+  padding-bottom: 100px
+  background-color: $color-dark-green
+
+  &__container
+    padding-left: 63px
+
+  &__logo
+    margin-bottom: 62px
