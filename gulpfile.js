@@ -6,7 +6,7 @@ const sourcemaps = require("gulp-sourcemaps");
 const del = require("del");
 
 gulp.task("css", () => {
-    return gulp.src("#src/sass/style.sass")
+    return gulp.src("#src/sass/core/style.sass")
       .pipe(plumber())
       .pipe(sourcemaps.init())
       .pipe(sass())
