@@ -18,7 +18,8 @@ gulp.task("css", () => {
   gulp.task("copy", () => {
     return gulp.src([
         "#src/img/**/*.{jpeg,jpg,png,svg}",
-        "#src/index.html"
+        "#src/index.html",
+        "#src/fonts/**/*.{woff2,woff}"
       ], {
         base: "#src"
       })
