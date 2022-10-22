@@ -1,47 +1,47 @@
 .story
+  background-color: $color-dark-green
   padding-top: 229px
   padding-bottom: 177px
-  background-color: $color-dark-green
 
   &__container
-    width: 1518px
     padding-left: 0
+    width: 1518px
 
   &__wrap
     display: flex
 
   &__innerwrap
-    width: 600px
-    margin-right: 12px
     padding-top: 81px
+    margin-right: 12px
+    width: 600px
 
   &__title
-    color: $color-white
     font-family: $font-second
-    font-weight: 700
     font-size: 50px
-    line-height: 79px
+    font-weight: 700
+    color: $color-white
     margin-bottom: 33px
+    line-height: 79px
 
   &__text
-    color: $color-white
     font-size: 22px
-    line-height: 40px
-    letter-spacing: -0.1px
+    color: $color-white
     margin-bottom: 55px
+    letter-spacing: -0.1px
+    line-height: 40px
 
   &__video
     position: relative
+    background: url("img/story-video-mask.png") no-repeat, url("img/story-video-bg.jpg") no-repeat
+    border-radius: 17px
     width: 896px
     height: 516px
-    border-radius: 17px
-    background: url("img/story-video-mask.png") no-repeat, url("img/story-video-bg.jpg") no-repeat
 
     &::after
-      position: absolute
       content: ""
-      width: 81px
-      height: 81px
-      background: url("img/play-icon.svg")
+      position: absolute
       top: 217px
       left: calc(50% - 41px)
+      background: url("img/play-icon.svg")
+      width: 81px
+      height: 81px
